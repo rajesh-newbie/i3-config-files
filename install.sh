@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/b#!/bin/bash
 
 # Install dependencies for i3
 echo "Installing dependencies for i3..."
@@ -52,7 +52,7 @@ echo "xft.dpi: 125" >> ~/.Xresources
 
 #cloning git repo to i3-config-files
 echo "cloning in to i3-config-files..."
-git clone https://github.com/rajesh-newbie/i3-dotfiles.git
+https://github.com/rajesh-newbie/i3-config-files.git
 
 # Move fonts to /usr/share/fonts
 echo "Moving fonts to respective places..."
@@ -61,7 +61,7 @@ sudo mv Work_Sans /usr/share/fonts/
 
 # Move config files to respective places
 echo "Moving config files to respective places..."
-cd i3-dotfiles
+cd i3-config-files
 cd i3
 mv config ~/.config/i3/config
 cd ..
