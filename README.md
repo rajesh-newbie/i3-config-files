@@ -1,16 +1,28 @@
 # i3-config-files
-The provided repo is for debian based machine only 
 
-Steps
+This repository provides i3 configuration files for Debian-based Linux distributions.
 
-Git clone https://github.com/rajesh-newbie/i3-config-files.git
-Cd i3-config-files
-Either
-chmod +x move.sh
-./move.sh
-Or 
-Chmod +x install.sh
+## Features
+
+
+## Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/rajesh-newbie/i3-config-files.git
+2. **moving files :**
+   ```bash
+   cd i3-config-files
+   chmod +x move.sh 
+   ./move.sh 
+
+## or
+
+
+
+1.**install file :**
+   ```bash
+apt install -y wget
+wget https://raw.githubusercontent.com/rajesh-newbie/i3-config-files/main/install.sh
+chmod +x install.sh
 ./install.sh
-
-if the rofi menu doesnt show up try changing the height and width
-
