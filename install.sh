@@ -1,4 +1,4 @@
-#!/b#!/bin/bash
+#!/bin/bash
 
 # Install dependencies for i3
 echo "Installing dependencies for i3..."
