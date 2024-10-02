@@ -1,0 +1,6 @@
+key_bindings:
+  - { key: C, mods: Control|Shift, action: Copy }
+  - { key: V, mods: Control|Shift, action: Paste }
+# Window background opacity from 0.0 to 1.0
+background_opacity: 0.8
+
