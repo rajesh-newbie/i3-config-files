@@ -7,7 +7,8 @@ sudo apt install ./keyring.deb
 echo "deb http://debian.sur5r.net/i3/ $(grep '^DISTRIB_CODENAME=' /etc/lsb-release | cut -f2 -d=) universe" | sudo tee /etc/apt/sources.list.d/sur5r-i3.list
 sudo apt update
 sudo apt install i3
-
+sudo apt install notify-osd
+sudo apt install playerctl
 # Install dependencies for Polybar
 echo "Installing dependencies for Polybar..."
 sudo apt install -y libiw-dev
@@ -35,7 +36,8 @@ sudo apt install -y libconfig-dev libdbus-1-dev libegl-dev libev-dev libgl-dev l
 sudo apt install -y build-essential git meson ninja-build libxcb1-dev libxcb-util0-dev libxcb-randr0-dev \
 libxcb-keysyms1-dev libxcb-xinerama0-dev libxcb-xfixes0-dev libxrender-dev libxext-dev \
 libgl1-mesa-dev libgdk-pixbuf2.0-dev libpcre2-dev libconfig++-dev
-
+sudo apt install picom
+sudo apt install rofi
 # Set up .xinitrc
 echo "Setting up .xinitrc..."
 echo "#!/bin/sh" > ~/.xinitrc
@@ -53,7 +55,7 @@ echo "xft.dpi: 125" >> ~/.Xresources
 #cloning git repo to i3-config-files
 echo "cloning in to i3-config-files..."
 https://github.com/rajesh-newbie/i3-config-files.git
-
+cd i3-config-files
 # Move fonts to /usr/share/fonts
 echo "Moving fonts to respective places..."
 sudo mv JetBrainsMono /usr/share/fonts/
@@ -61,7 +63,6 @@ sudo mv Work_Sans /usr/share/fonts/
 
 # Move config files to respective places
 echo "Moving config files to respective places..."
-cd i3-config-files
 cd i3
 mkdir ~/.config/i3
 mv config ~/.config/i3/
